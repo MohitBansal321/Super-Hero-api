@@ -1,0 +1,55 @@
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  .heading{
+    text-align:center;
+  }
+  .section-1{
+    text-align:center;
+  }
+  .section-1 button{
+     border: none;
+          display: block;
+          text-align: center;
+          cursor: pointer;
+          text-transform: uppercase;
+          outline: none;
+          overflow: hidden;
+          position: relative;
+          color: #eeeeee;
+          font-weight: 600;
+          font-size: 15px;
+          background-color: #D7C0AE;
+          padding:15px;
+          margin: 0 auto;
+  }
+  .section-1 button span {
+          position: relative;
+          z-index: 1;
+        }
+   .section-1 button:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 470%;
+          width: 140%;
+          background: #967E76;
+          transition: all .5s ease-in-out;
+          transform: translateX(-100%) translateY(-25%) rotate(45deg);
+        }
+   .section-1 button:after {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          height: 470%;
+          width: 140%;
+          background: #967E76;
+          transition: all .5s ease-in-out;
+          transform: translateX(-100%) translateY(-25%) rotate(45deg);
+        }
+  .section-1 button:hover:after {
+          transform: translateX(-9%) translateY(-25%) rotate(45deg);
+        }
