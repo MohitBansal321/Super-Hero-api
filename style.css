@@ -1,55 +1,48 @@
-html, body {
-    height: 100%;
-    width: 100%;
-  }
-  .heading{
-    text-align:center;
-  }
-  .section-1{
-    text-align:center;
-  }
-  .section-1 button{
-     border: none;
-          display: block;
-          text-align: center;
-          cursor: pointer;
-          text-transform: uppercase;
-          outline: none;
-          overflow: hidden;
-          position: relative;
-          color: #eeeeee;
-          font-weight: 600;
-          font-size: 15px;
-          background-color: #D7C0AE;
-          padding:15px;
-          margin: 0 auto;
-  }
-  .section-1 button span {
-          position: relative;
-          z-index: 1;
-        }
-   .section-1 button:after {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 0;
-          height: 470%;
-          width: 140%;
-          background: #967E76;
-          transition: all .5s ease-in-out;
-          transform: translateX(-100%) translateY(-25%) rotate(45deg);
-        }
-   .section-1 button:after {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 0;
-          height: 470%;
-          width: 140%;
-          background: #967E76;
-          transition: all .5s ease-in-out;
-          transform: translateX(-100%) translateY(-25%) rotate(45deg);
-        }
-  .section-1 button:hover:after {
-          transform: translateX(-9%) translateY(-25%) rotate(45deg);
-        }
+body {
+  background-color: aliceblue;
+}
+/* Heading  */
+.heading {
+  font-size: 4rem;
+  width: 100%;
+  text-align: center;
+}
+
+/* Input Box  */
+.section-1 {
+  display: flex;
+  justify-content: center;
+}
+.section-1 input {
+  border: none;
+  background-color: rgb(125, 191, 248);
+  height: 40px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 0px 20px;
+}
+
+.section-1 button {
+  border: none;
+  font-size: 1.5rem;
+  background-color: rgb(125, 191, 248);
+  margin: 0px 10px;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+.section-1 button:hover {
+  background-color: rgb(119, 146, 146);
+}
+
+#SuperHeroImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+#SuperHeroImage img {
+  width: 250px;
+}
